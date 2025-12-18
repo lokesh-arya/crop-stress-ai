@@ -146,13 +146,13 @@ python 6_predict.py
 crop_stress_project/
 ├── 1a_create_assets.py                 # Leaf mask extraction
 ├── 1b_generate_synthetic_data.py       # Synthetic dataset generation
-├── 2_train_yolo_detector.py            # Stage 1 training script
+├── 2_train_yolo.py                     # Stage 1 training script
 ├── 3_crop_and_organize.py              # Crops real images using Stage 1 output
 ├── 4_train_species_id.py               # Stage 2 training script (9 classes)
 ├── 5_train_stress_class.py             # Stage 3 training script (57 subtypes)
 ├── 6_predict.py                        # Final 3-Stage Inference Pipeline
 ├── data_utils.py                       # Vein channel preprocessing and custom dataset
-├── data.yaml                           # YOLO config file
+├── leaf_detection.yaml                 # YOLO config file
 ├── original_leaves/                    # Source images for asset creation
 ├── backgrounds/                        # Background assets
 ├── assets/                             # Output: RGBA leaf assets
